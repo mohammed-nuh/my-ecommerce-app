@@ -1,0 +1,98 @@
+/* General Styles */
+:host {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background for the entire host */
+    padding: 20px; /* Padding around the host */
+}
+
+/* Product Container */
+.product-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Product Card */
+.product-card {
+    padding: 30px;
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 15px; /* Margin around each card */
+    width: calc(33.333% - 30px); /* Three cards per row, accounting for margins */
+    transition: transform 0.2s; /* Smooth transition for hover effects */
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Product Image */
+.product-image {
+    aspect-ratio: 1 / 1; /* Square images */
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 8px; /* Rounded corners for the top left */
+    border-top-right-radius: 8px; /* Rounded corners for the top right */
+}
+
+/* Product Info */
+.product-info {
+    padding: 15px; /* Padding inside the product info section */
+}
+
+/* Product Name */
+.product-name {
+    font-size: 1.5em; /* Larger font size for the product name */
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark gray color for the product name */
+}
+
+/* Product Description */
+.product-description {
+    font-size: 1em; /* Standard font size for the description */
+    color: #666; /* Medium gray color for the description */
+    margin: 10px 0; /* Margin above and below the description */
+}
+
+/* Product Price */
+.product-price {
+    font-size: 1.2em; /* Slightly larger font size for the price */
+    color: #e67e22; /* Orange color for the price */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Buy Button */
+.buy-button {
+    float: right;
+    background-color: #3498db; /* Blue background for the button */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Standard font size */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.buy-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 30px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%; /* One card per row on mobile */
+    }
+}

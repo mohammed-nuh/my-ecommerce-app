@@ -1,0 +1,102 @@
+<div class="product-container">
+  @for (product of productList; track product.id){
+  <div class="product-card">
+    <img [src]="product.imageUrl" class="product-image" />
+    <div class="product-info">
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-description">{{ product.description }}</p>
+      <span class="product-price">${{ product.price }}</span>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+  }
+</div>
+
+<!-- Without for loop-->
+<!-- 
+ <div class="product-container">
+  <div class="product-card">
+    <img
+      src="https://images-cdn.ubuy.co.in/633a87dfd6b53a07f76e043c-ip12-pro-max-unlocked-smartphone-for.jpg"
+      alt="Smartphone"
+      class="product-image"
+    />
+    <div class="product-info">
+      <h3 class="product-name">Smartphone</h3>
+      <p class="product-description">Latest model with high performance</p>
+      <span class="product-price">$699.99</span>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img
+      src="https://m.media-amazon.com/images/I/510uTHyDqGL._AC_UF1000,1000_QL80_.jpg"
+      alt="Laptop"
+      class="product-image"
+    />
+    <div class="product-info">
+      <h3 class="product-name">Laptop</h3>
+      <p class="product-description">Lightweight and powerful</p>
+      <span class="product-price">$999.99</span>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img
+      src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQTQ3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1687660671363"
+      alt="Headphones"
+      class="product-image"
+    />
+    <div class="product-info">
+      <h3 class="product-name">Headphones</h3>
+      <p class="product-description">Noise-cancelling over-ear headphones</p>
+      <span class="product-price">$199.99</span>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTskp7sz9kFzhNdR3sBQ1ZSy3vWzgHpwbyEeg&s"
+      alt="Smartwatch"
+      class="product-image"
+    />
+    <div class="product-info">
+      <h3 class="product-name">Smartwatch</h3>
+      <p class="product-description">Track your fitness and notifications</p>
+      <span class="product-price">$249.99</span>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img
+      src="https://m.media-amazon.com/images/I/715Dsu2jxWL.jpg"
+      alt="Tablet"
+      class="product-image"
+    />
+    <div class="product-info">
+      <h3 class="product-name">Tablet</h3>
+      <p class="product-description">Portable and versatile</p>
+      <span class="product-price">$499.99</span>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <img
+      src="https://x.imastudent.com/content/0024227_jbl-partybox-310-portable-bluetooth-speaker-with-party-lights_500.jpeg"
+      alt="Bluetooth Speaker"
+      class="product-image"
+    />
+    <div class="product-info">
+      <h3 class="product-name">Bluetooth Speaker</h3>
+      <p class="product-description">High-quality sound on the go</p>
+      <span class="product-price">$149.99</span>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+</div>
+-->
