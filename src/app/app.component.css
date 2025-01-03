@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0px;
+}
+
+.mont-heavy {
+    font-family: "Montserrat";
+    font-weight: 700;
+}
