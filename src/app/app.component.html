@@ -1,4 +1,24 @@
-<header class="mont-heavy">My Ecommerce Webpage</header>
-<nav></nav>
-<products></products>
-<router-outlet />
+<header class="mont-heavy">Post Management</header>
+
+<nav>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
+    <!-- <li><a routerLink="/products">Products</a></li>
+    <li><a routerLink="/users">Users</a></li> -->
+    <li><a routerLink="/add-post">Add Post</a></li>
+    <li><a routerLink="/posts">Posts</a></li>
+    <!-- <li><a routerLink="/register">Sign Up</a></li> -->
+  </ul>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Ecommerce Webpage. All rights reserved.</p>
+  <p>
+    Contact us:
+    <a href="mailto:support@myecommerce.com">support.com</a>
+  </p>
+</footer>

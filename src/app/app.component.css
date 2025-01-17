@@ -1,10 +1,72 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+/* Header */
 header {
     text-align: center;
     font-size: 50px;
-    margin: 20px 0px;
+    margin: 20px 0;
+    color: #ffffff;
 }
 
+/* Font for headings */
 .mont-heavy {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
+}
+
+/* Navigation */
+nav {
+    background-color: #2E5077; /* Dark Blue */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #f2a365; /* Light Accent */
+}
+
+/* Footer */
+footer {
+    background-color: #2E5077; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+footer a {
+    color: #f2a365;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    background-color: #f4f4f4;
+    color: #00183e; /* Dark Blue */
+    padding: 20px;
 }

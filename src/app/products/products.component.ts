@@ -8,7 +8,6 @@ import { ProductsService } from './products.service';
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
-
 export class ProductsComponent {
   title: string = "List of products";
   productList: Product[];

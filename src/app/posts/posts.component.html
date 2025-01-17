@@ -1,0 +1,38 @@
+<div class="search-container">
+  <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" />
+  <button (click)="onSearch()">Search</button>
+</div>
+<table>
+  <caption>
+    Post Details
+  </caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>User ID</th>
+      <th>Title</th>
+      <th>View</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (post of filteredPostsList; track post.id){
+    <tr>
+      <td>{{ post.id }}</td>
+      <td>{{ post.userId }}</td>
+      <td>{{ post.title }}</td>
+      <td>
+        <button routerLink="/post-info/{{ post.id }}" class="btn btn-view">
+          View
+        </button>
+
+        <button class="btn btn-edit" [routerLink]="['/update-post', post.id]">
+          Edit
+        </button>
+        <button class="btn btn-delete" (click)="onDelete(post.id)">
+          Delete
+        </button>
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

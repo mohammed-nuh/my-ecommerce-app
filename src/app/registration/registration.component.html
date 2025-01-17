@@ -1,0 +1,81 @@
+<div class="center-wrapper">
+  <div class="form-container">
+    <form [formGroup]="formToSubmit" (ngSubmit)="OnSubmit()">
+      <h2>Register</h2>
+
+      <!-- control 1 -->
+      <label for="fullName">Full Name:</label>
+      <input
+        type="text"
+        id="fullName"
+        formControlName="fullName"
+        name="fullName"
+        required
+      />
+      <div
+        *ngIf="
+          formToSubmit.controls['fullName']?.invalid &&
+          formToSubmit.controls['fullName']?.touched
+        "
+        class="formError"
+      >
+        <span *ngIf="formToSubmit.get('fullName')?.errors?.['required']"
+          >Full Name is required.</span
+        >
+        <span *ngIf="formToSubmit.get('fullName')?.errors?.['minlength']"
+          >Min length is 3</span
+        >
+      </div>
+
+      <!-- control 2 -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        name="email"
+        required
+      />
+      <div
+        *ngIf="
+          formToSubmit.controls['email']?.invalid &&
+          formToSubmit.controls['email']?.touched
+        "
+        class="formError"
+      >
+        <span *ngIf="formToSubmit.get('email')?.errors?.['required']"
+          >Email is required.</span
+        >
+      </div>
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        name="password"
+        required
+      />
+      <div
+        *ngIf="
+          formToSubmit.controls['password']?.invalid &&
+          formToSubmit.controls['password']?.touched
+        "
+        class="formError"
+      >
+        <span *ngIf="formToSubmit.get('password')?.errors?.['required']"
+          >Password is required.</span
+        >
+        <span *ngIf="formToSubmit.get('password')?.errors?.['minlength']"
+          >Min length is 6</span
+        >
+      </div>
+
+      <button type="submit" [disabled]="formToSubmit.invalid">Submit</button>
+    </form>
+  </div>
+
+  <div *ngIf="isSubmitted && isFormValid" class="afterSubmitMessage">
+    Form submitted successfully!
+  </div>
+</div>

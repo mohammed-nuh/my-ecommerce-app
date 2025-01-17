@@ -1,0 +1,11 @@
+<h1>List of Users</h1>
+<div class="user-container">
+  @for (user of usersList; track user.id){
+  <div class="user-card">
+    <h2>{{ user.name.firstname }} {{ user.name.lastname }}</h2>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Phone:</strong> {{ user.phone }}</p>
+    <p><strong>City:</strong> {{ user.address.city }}</p>
+  </div>
+  }
+</div>

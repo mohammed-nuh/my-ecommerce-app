@@ -1,0 +1,10 @@
+<div class="post-details" *ngIf="post && post.id > 0">
+  <div class="post-info">
+    <h1 class="post-useId">UserId: {{ post.userId }}</h1>
+    <p class="post-id">PostId: {{ post.id }}</p>
+    <p class="post-title">{{ post.title }}</p>
+    <p class="post-body">
+      {{ post.body }}
+    </p>
+  </div>
+</div>

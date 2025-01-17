@@ -1,0 +1,106 @@
+:host {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e9f5ff;
+}
+
+caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-view {
+  background-color: #4CAF50; /* Green */
+}
+
+.btn-edit {
+  background-color: #FFC107; /* Yellow */
+}
+
+.btn-delete {
+  background-color: #F44336; /* Red */
+}
+
+/* Centering the search container */
+.search-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  margin: 20px 0;          /* Add margin for spacing */
+}
+
+/* Style for search input field */
+.search-container input[type="text"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 300px;
+  background-color: #ffffff; /* White background */
+  color: #333;               /* Dark text */
+  border-radius: 5px;        /* Rounded corners */
+}
+
+/* Style for search button */
+.search-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e3a5f; /* Dark blue */
+  color: #ffffff;            /* White text */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;        /* Rounded corners */
+  transition: background-color 0.3s;
+  margin-left: 10px;         /* Space between input and button */
+}
+
+.search-container button:hover {
+  background-color: #102a44; /* Darker blue on hover */
+}

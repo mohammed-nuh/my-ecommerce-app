@@ -1,0 +1,74 @@
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack children vertically */
+    height: 100vh;
+}
+
+.form-container {
+    margin-top: 0%;
+    background-color: #00142c;
+    padding: 30px;
+    padding-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00a8cc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1f4068;
+    color: #ffffff;
+}
+
+button {
+    margin: 0 auto; /* Center horizontally within the container */
+    display: block; /* Ensures the margin works as expected */
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a8cc;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007a99;
+}
+
+.afterSubmitMessage {
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    color: rgb(0, 192, 0);
+}
+
+.formError {
+    color: red;
+    font-size: 8px;
+}
+
+.formControl {
+    padding: 15px;
+    align-items: center;
+    margin-right: 20px;
+}
